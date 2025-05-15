@@ -19,6 +19,7 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
+        'image',
         'name',
         'email',
         'password',
@@ -47,7 +48,7 @@ class User extends Authenticatable
         ];
     }
 
-    
+
     public function posts()
     {
         return $this->hasMany(Post::class);
