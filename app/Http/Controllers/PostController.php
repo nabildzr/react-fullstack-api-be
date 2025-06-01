@@ -61,6 +61,7 @@ class PostController extends Controller implements HasMiddleware
 
         $post->update($fields);
 
+
         return ['post' =>  $post, 'user' => $post->user];
     }
 
